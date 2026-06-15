@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>プライバシーポリシー｜TownApp</title>
+  <title>サポート / Support｜TownApp</title>
   <style>
     :root { color-scheme: light; }
     body {
@@ -31,71 +31,149 @@
       color: #0a4d8c;
     }
     .meta { color: #6e6e73; font-size: 0.9rem; margin-bottom: 32px; }
-    ul { padding-left: 1.2em; }
-    li { margin-bottom: 6px; }
-    .contact { background: #f5f5f7; border-radius: 12px; padding: 16px 20px; }
+    .faq dt { font-weight: 600; margin-top: 20px; }
+    .faq dd { margin: 6px 0 0; padding-left: 0; }
+    .contact { background: #f5f5f7; border-radius: 12px; padding: 16px 20px; margin-top: 12px; }
     footer { margin-top: 48px; color: #86868b; font-size: 0.85rem; }
     a { color: #0a4d8c; }
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .lang-switch button {
+      font: inherit;
+      font-size: 0.9rem;
+      padding: 6px 16px;
+      border: 1px solid #0a4d8c;
+      border-radius: 999px;
+      background: #ffffff;
+      color: #0a4d8c;
+      cursor: pointer;
+    }
+    .lang-switch button.active {
+      background: #0a4d8c;
+      color: #ffffff;
+    }
+    [data-lang] { display: none; }
+    [data-lang].active { display: block; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>プライバシーポリシー</h1>
-    <p class="meta">アプリ名：TownApp　／　制定日：2026年6月12日</p>
+    <div class="lang-switch">
+      <button type="button" data-set-lang="ja" class="active">日本語</button>
+      <button type="button" data-set-lang="en">English</button>
+    </div>
 
-    <p>
-      本アプリ「TownApp」（以下「本アプリ」）は、地域の防災・災害情報を提供することを目的としたアプリです。
-      本アプリは利用者のプライバシーを尊重し、個人情報・データを以下のとおり適切に取り扱います。
-    </p>
+    <!-- ===================== 日本語 ===================== -->
+    <div data-lang="ja" class="active">
+      <h1>サポート</h1>
+      <p class="meta">アプリ名：TownApp</p>
 
-    <h2>1. 取得する情報</h2>
-    <ul>
-      <li><strong>位置情報</strong>：現在地周辺の気象・防災情報の表示、および地図上での位置特定のために使用します。位置情報はアプリの利用中のみ取得し、バックグラウンドでの継続的な取得は行いません。</li>
-      <li><strong>写真</strong>：災害状況の報告に画像を添付する場合に、利用者が写真ライブラリから選択した画像のみを使用します。本アプリがカメラで撮影することはありません。</li>
-      <li><strong>端末情報・プッシュ通知トークン</strong>：災害・防災に関する通知を配信するために、端末のモデル名、OS情報、およびプッシュ通知用トークンを取得します。</li>
-    </ul>
-
-    <h2>2. 利用目的</h2>
-    <p>
-      取得した情報は、防災・災害情報の提供、地域に応じた情報の表示、災害報告の受付、
-      および通知の配信のために利用します。広告目的での利用や、第三者への販売は一切行いません。
-    </p>
-
-    <h2>3. 第三者への提供</h2>
-    <p>
-      法令に基づく場合を除き、利用者の同意なく取得した情報を第三者へ提供することはありません。
-    </p>
-
-    <h2>4. データの管理・保持</h2>
-    <p>
-      取得した情報は、漏えい・紛失・改ざんを防止するため適切に管理し、
-      利用目的の達成に必要な範囲でのみ保持します。
-    </p>
-
-    <h2>5. 利用者の権利</h2>
-    <p>
-      本アプリは、端末の設定からいつでも位置情報・写真・通知の許可を変更・取り消すことができます。
-      取得済みデータの削除をご希望の場合は、下記のお問い合わせ先までご連絡ください。
-    </p>
-
-    <h2>6. ポリシーの変更</h2>
-    <p>
-      本ポリシーは、法令の変更やサービス内容の変更に応じて改定することがあります。
-      重要な変更がある場合は、本ページにてお知らせします。
-    </p>
-
-    <h2>7. お問い合わせ</h2>
-    <div class="contact">
       <p>
-        本ポリシーおよび本アプリに関するお問い合わせは、下記までご連絡ください。<br />
-        運営者：J&amp;V Solutions<br />
-        メール：binhnt@jvs.com.vn
+        「TownApp」は、地域の生活情報をまとめてお届けするアプリです（株式会社JVS提供）。
+        ご利用にあたってのよくあるご質問とお問い合わせ先をご案内します。
       </p>
+
+      <h2>よくあるご質問</h2>
+      <dl class="faq">
+        <dt>Q. 通知が届きません。</dt>
+        <dd>A. 端末の「設定」→「通知」から本アプリの通知が許可されているかご確認ください。また、設定画面で通知を受け取る地域・カテゴリが選択されているかをご確認ください。</dd>
+
+        <dt>Q. 位置情報は何に使われますか？</dt>
+        <dd>A. 現在地周辺の気象・防災情報の表示、および地図上での位置特定のために、アプリの利用中のみ使用します。バックグラウンドで継続的に位置情報を取得することはありません。</dd>
+
+        <dt>Q. 災害報告に写真を添付できません。</dt>
+        <dd>A. 端末の「設定」→本アプリ→「写真」へのアクセスが許可されているかご確認ください。</dd>
+
+        <dt>Q. 通知を受け取る地域を変更したい。</dt>
+        <dd>A. アプリ内の「設定」画面から、お住まいの地域や受け取る通知のカテゴリを変更できます。</dd>
+
+        <dt>Q. アプリが正しく表示・動作しません。</dt>
+        <dd>A. アプリを一度終了して再起動するか、最新バージョンへのアップデートをお試しください。解決しない場合は下記までお問い合わせください。</dd>
+      </dl>
+
+      <h2>お問い合わせ</h2>
+      <div class="contact">
+        <p>
+          ご不明な点やご要望は、下記までお気軽にお問い合わせください。<br />
+          運営者：J&amp;V Solutions<br />
+          メール：binhnt@jvs.com.vn<br />
+          受付時間：平日 9:00〜17:00
+        </p>
+      </div>
+
+      <h2>関連ページ</h2>
+      <p><a href="../">プライバシーポリシー</a></p>
+    </div>
+
+    <!-- ===================== English ===================== -->
+    <div data-lang="en">
+      <h1>Support</h1>
+      <p class="meta">App name: TownApp</p>
+
+      <p>
+        "TownApp" brings together community living information (provided by J&amp;V Solutions). Below
+        are frequently asked questions and our contact information.
+      </p>
+
+      <h2>Frequently Asked Questions</h2>
+      <dl class="faq">
+        <dt>Q. I'm not receiving notifications.</dt>
+        <dd>A. Please check that notifications for this app are allowed under your device's "Settings" → "Notifications." Also confirm that the regions and categories you want to receive notifications for are selected on the app's settings screen.</dd>
+
+        <dt>Q. What is location information used for?</dt>
+        <dd>A. It is used only while the app is in use, to display weather and disaster-prevention information around your current location and to identify your position on the map. Location is not continuously collected in the background.</dd>
+
+        <dt>Q. I can't attach a photo to a disaster report.</dt>
+        <dd>A. Please check that access to "Photos" is allowed under your device's "Settings" → this app.</dd>
+
+        <dt>Q. I want to change the region for receiving notifications.</dt>
+        <dd>A. You can change your area and the categories of notifications you receive from the "Settings" screen inside the app.</dd>
+
+        <dt>Q. The app does not display or work correctly.</dt>
+        <dd>A. Please try closing and restarting the app, or updating to the latest version. If the problem persists, please contact us below.</dd>
+      </dl>
+
+      <h2>Contact</h2>
+      <div class="contact">
+        <p>
+          For any questions or requests, please feel free to contact us below.<br />
+          Operator: J&amp;V Solutions<br />
+          Email: binhnt@jvs.com.vn<br />
+          Hours: Weekdays 9:00–17:00 (JST)
+        </p>
+      </div>
+
+      <h2>Related Pages</h2>
+      <p><a href="../">Privacy Policy</a></p>
     </div>
 
     <footer>
       © 2026 TownApp. All rights reserved.
     </footer>
   </div>
+
+  <script>
+    (function () {
+      var buttons = document.querySelectorAll("[data-set-lang]");
+      var sections = document.querySelectorAll("[data-lang]");
+      function setLang(lang) {
+        buttons.forEach(function (b) {
+          b.classList.toggle("active", b.getAttribute("data-set-lang") === lang);
+        });
+        sections.forEach(function (s) {
+          s.classList.toggle("active", s.getAttribute("data-lang") === lang);
+        });
+        document.documentElement.setAttribute("lang", lang);
+      }
+      buttons.forEach(function (b) {
+        b.addEventListener("click", function () {
+          setLang(b.getAttribute("data-set-lang"));
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
