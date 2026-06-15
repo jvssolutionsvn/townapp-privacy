@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>プライバシーポリシー｜TownApp</title>
+  <title>プライバシーポリシー / Privacy Policy｜TownApp</title>
   <style>
     :root { color-scheme: light; }
     body {
@@ -36,66 +36,184 @@
     .contact { background: #f5f5f7; border-radius: 12px; padding: 16px 20px; }
     footer { margin-top: 48px; color: #86868b; font-size: 0.85rem; }
     a { color: #0a4d8c; }
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .lang-switch button {
+      font: inherit;
+      font-size: 0.9rem;
+      padding: 6px 16px;
+      border: 1px solid #0a4d8c;
+      border-radius: 999px;
+      background: #ffffff;
+      color: #0a4d8c;
+      cursor: pointer;
+    }
+    .lang-switch button.active {
+      background: #0a4d8c;
+      color: #ffffff;
+    }
+    [data-lang] { display: none; }
+    [data-lang].active { display: block; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>プライバシーポリシー</h1>
-    <p class="meta">アプリ名：TownApp　／　制定日：2026年6月12日</p>
+    <div class="lang-switch">
+      <button type="button" data-set-lang="ja" class="active">日本語</button>
+      <button type="button" data-set-lang="en">English</button>
+    </div>
 
-    <p>
-      本アプリ「TownApp」（以下「本アプリ」）は、地域の防災・災害情報を提供することを目的としたアプリです。
-      本アプリは利用者のプライバシーを尊重し、個人情報・データを以下のとおり適切に取り扱います。
-    </p>
+    <!-- ===================== 日本語 ===================== -->
+    <div data-lang="ja" class="active">
+      <h1>プライバシーポリシー</h1>
+      <p class="meta">アプリ名：TownApp　／　制定日：2026年6月12日</p>
 
-    <h2>1. 取得する情報</h2>
-    <ul>
-      <li><strong>位置情報</strong>：現在地周辺の気象・防災情報の表示、および地図上での位置特定のために使用します。位置情報はアプリの利用中のみ取得し、バックグラウンドでの継続的な取得は行いません。</li>
-      <li><strong>写真</strong>：災害状況の報告に画像を添付する場合に、利用者が写真ライブラリから選択した画像のみを使用します。本アプリがカメラで撮影することはありません。</li>
-      <li><strong>端末情報・プッシュ通知トークン</strong>：災害・防災に関する通知を配信するために、端末のモデル名、OS情報、およびプッシュ通知用トークンを取得します。</li>
-    </ul>
-
-    <h2>2. 利用目的</h2>
-    <p>
-      取得した情報は、防災・災害情報の提供、地域に応じた情報の表示、災害報告の受付、
-      および通知の配信のために利用します。広告目的での利用や、第三者への販売は一切行いません。
-    </p>
-
-    <h2>3. 第三者への提供</h2>
-    <p>
-      法令に基づく場合を除き、利用者の同意なく取得した情報を第三者へ提供することはありません。
-    </p>
-
-    <h2>4. データの管理・保持</h2>
-    <p>
-      取得した情報は、漏えい・紛失・改ざんを防止するため適切に管理し、
-      利用目的の達成に必要な範囲でのみ保持します。
-    </p>
-
-    <h2>5. 利用者の権利</h2>
-    <p>
-      本アプリは、端末の設定からいつでも位置情報・写真・通知の許可を変更・取り消すことができます。
-      取得済みデータの削除をご希望の場合は、下記のお問い合わせ先までご連絡ください。
-    </p>
-
-    <h2>6. ポリシーの変更</h2>
-    <p>
-      本ポリシーは、法令の変更やサービス内容の変更に応じて改定することがあります。
-      重要な変更がある場合は、本ページにてお知らせします。
-    </p>
-
-    <h2>7. お問い合わせ</h2>
-    <div class="contact">
       <p>
-        本ポリシーおよび本アプリに関するお問い合わせは、下記までご連絡ください。<br />
-        運営者：〔運営者名を記載してください〕<br />
-        メール：〔連絡先メールアドレスを記載してください〕
+        本アプリ「TownApp」（以下「本アプリ」）は、地域の生活情報をまとめて提供することを目的としたアプリです。
+        本アプリは、株式会社JVS（J&amp;V Solutions、日本の親会社「情管（Jokan Co., Ltd.）」のグループ会社）が
+        開発・提供しています。本アプリは利用者のプライバシーを尊重し、個人情報・データを以下のとおり適切に取り扱います。
       </p>
+
+      <h2>1. 取得する情報</h2>
+      <ul>
+        <li><strong>位置情報</strong>：現在地周辺の気象・防災情報の表示、および地図上での位置特定のために使用します。位置情報はアプリの利用中のみ取得し、バックグラウンドでの継続的な取得は行いません。</li>
+        <li><strong>写真</strong>：災害状況の報告に画像を添付する場合に、利用者が写真ライブラリから選択した画像のみを使用します。本アプリがカメラで撮影することはありません。</li>
+        <li><strong>連絡先情報（氏名・メールアドレス・電話番号）</strong>：写真投稿（公共施設の破損報告）およびお問い合わせフォームにおいて、利用者が入力した場合にのみ取得します。報告内容への返信や、内容確認の連絡のために使用します。</li>
+        <li><strong>利用者が入力した内容</strong>：報告・お問い合わせの本文など、利用者がフォームに入力したテキストを取得します。</li>
+        <li><strong>端末情報・プッシュ通知トークン</strong>：通知を配信するために、端末のモデル名、OS情報、およびプッシュ通知用トークンを取得します。</li>
+      </ul>
+
+      <h2>2. 利用目的</h2>
+      <p>
+        取得した情報は、生活情報・防災・災害情報の提供、地域に応じた情報の表示、災害報告およびお問い合わせの受付・対応、
+        ならびに通知の配信のために利用します。広告目的での利用や、第三者への販売、第三者によるトラッキングは一切行いません。
+      </p>
+
+      <h2>3. 第三者への提供</h2>
+      <p>
+        法令に基づく場合を除き、利用者の同意なく取得した情報を第三者へ提供することはありません。
+      </p>
+
+      <h2>4. データの管理・保持</h2>
+      <p>
+        取得した情報は、漏えい・紛失・改ざんを防止するため適切に管理し、
+        利用目的の達成に必要な範囲でのみ保持します。データの送信は暗号化された通信（HTTPS）により行います。
+      </p>
+
+      <h2>5. 利用者の権利</h2>
+      <p>
+        本アプリは、端末の設定からいつでも位置情報・写真・通知の許可を変更・取り消すことができます。
+        取得済みデータの削除をご希望の場合は、下記のお問い合わせ先までご連絡ください。
+      </p>
+
+      <h2>6. ポリシーの変更</h2>
+      <p>
+        本ポリシーは、法令の変更やサービス内容の変更に応じて改定することがあります。
+        重要な変更がある場合は、本ページにてお知らせします。
+      </p>
+
+      <h2>7. お問い合わせ</h2>
+      <div class="contact">
+        <p>
+          本ポリシーおよび本アプリに関するお問い合わせは、下記までご連絡ください。<br />
+          運営者：J&amp;V Solutions<br />
+          メール：binhnt@jvs.com.vn
+        </p>
+      </div>
+    </div>
+
+    <!-- ===================== English ===================== -->
+    <div data-lang="en">
+      <h1>Privacy Policy</h1>
+      <p class="meta">App name: TownApp　/　Effective date: June 12, 2026</p>
+
+      <p>
+        "TownApp" (the "App") is an application that brings together community living information. The
+        App is developed and provided by J&amp;V Solutions (a subsidiary of our Japanese parent company
+        "Jokan", Jokan Co., Ltd.). The App respects users' privacy and handles personal information and
+        data appropriately, as described below.
+      </p>
+
+      <h2>1. Information We Collect</h2>
+      <ul>
+        <li><strong>Location</strong>: Used to display weather and disaster-prevention information around your current location and to identify your position on the map. Location is obtained only while the App is in use; it is not continuously collected in the background.</li>
+        <li><strong>Photos</strong>: When attaching an image to a disaster report, the App uses only the photo the user selects from the photo library. The App does not take pictures with the camera.</li>
+        <li><strong>Contact information (name, email address, phone number)</strong>: Collected only when entered by the user in the photo-report (damaged public-facility report) and inquiry forms. Used to reply to reports and to contact the user for clarification.</li>
+        <li><strong>User-entered content</strong>: Text entered by the user in forms, such as the body of reports and inquiries.</li>
+        <li><strong>Device information and push notification token</strong>: The device model name, OS information, and push notification token are collected in order to deliver notifications.</li>
+      </ul>
+
+      <h2>2. Purpose of Use</h2>
+      <p>
+        The collected information is used to provide living, disaster-prevention, and disaster
+        information; to display region-specific information; to receive and respond to disaster
+        reports and inquiries; and to deliver notifications. We do not use the information for
+        advertising purposes, sell it to third parties, or allow third-party tracking.
+      </p>
+
+      <h2>3. Provision to Third Parties</h2>
+      <p>
+        Except as required by law, we do not provide collected information to third parties without
+        the user's consent.
+      </p>
+
+      <h2>4. Data Management and Retention</h2>
+      <p>
+        Collected information is managed appropriately to prevent leakage, loss, or alteration, and is
+        retained only to the extent necessary to achieve the purposes of use. Data is transmitted over
+        encrypted communication (HTTPS).
+      </p>
+
+      <h2>5. Users' Rights</h2>
+      <p>
+        You may change or revoke permissions for location, photos, and notifications at any time from
+        your device settings. If you wish to delete data already collected, please contact us using the
+        information below.
+      </p>
+
+      <h2>6. Changes to This Policy</h2>
+      <p>
+        This policy may be revised in response to changes in laws or in the service. If there are
+        significant changes, we will announce them on this page.
+      </p>
+
+      <h2>7. Contact</h2>
+      <div class="contact">
+        <p>
+          For inquiries regarding this policy or the App, please contact us below.<br />
+          Operator: J&amp;V Solutions<br />
+          Email: binhnt@jvs.com.vn
+        </p>
+      </div>
     </div>
 
     <footer>
       © 2026 TownApp. All rights reserved.
     </footer>
   </div>
+
+  <script>
+    (function () {
+      var buttons = document.querySelectorAll("[data-set-lang]");
+      var sections = document.querySelectorAll("[data-lang]");
+      function setLang(lang) {
+        buttons.forEach(function (b) {
+          b.classList.toggle("active", b.getAttribute("data-set-lang") === lang);
+        });
+        sections.forEach(function (s) {
+          s.classList.toggle("active", s.getAttribute("data-lang") === lang);
+        });
+        document.documentElement.setAttribute("lang", lang);
+      }
+      buttons.forEach(function (b) {
+        b.addEventListener("click", function () {
+          setLang(b.getAttribute("data-set-lang"));
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
